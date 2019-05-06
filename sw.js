@@ -1,5 +1,5 @@
 
-let staticCacheName = 'resturant-review-v1';
+let staticCacheName = 'resturant-review-v2';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -8,10 +8,14 @@ self.addEventListener('install', function(event) {
         '/',
         'js/main.js',
         'js/restaurant_info.js',
+        'js/dbhelper.js',
         'css/styles.css',
-        'img/'
+        'img/',
+        'restaurant.html',
+        'index.html',
+        'data/restaurants.json'
       ]
-
+      
       for(let i = 1; i < 11; i++){
         files.push('img/' + i + '.jpg')
       }
